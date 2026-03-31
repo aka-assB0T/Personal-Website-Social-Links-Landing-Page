@@ -1,0 +1,210 @@
+/* Reset body styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif; /* Fallback to sans-serif */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Gradient background with more colors and smooth transition */
+.gradient-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, 
+        #6a11cb, /* Violet */
+        #2575fc, /* Blue */
+        #b76eb8, /* Light Purple */
+        #2a003d, /* Dark Purple */
+        #8e24aa, /* Medium Purple */
+        #ff7eb3, /* Light Pink */
+        #5f0f40, /* Deep Plum */
+        #2196f3, /* Sky Blue */
+        #4caf50, /* Green */
+        #673ab7, /* Deep Indigo */
+        #3f51b5, /* Blue Gray */
+        #00bcd4, /* Cyan */
+        #009688, /* Teal */
+        #8bc34a, /* Light Green */
+        #ff9800, /* Amber */
+        #e91e63  /* Deep Pink */
+    );
+    background-size: 900% 900%; /* Larger background for smoother animation */
+    animation: gradientShift 150s ease-in-out infinite; /* Slower and smoother animation */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Gradient animation */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Centered card */
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    max-width: 90%; /* Prevent overflow on smaller screens */
+    padding: 20px; /* Add padding for better spacing */
+    margin: 0 auto;
+    gap: 10px;
+}
+
+/* Profile circular image with jump animation */
+.profile-image {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #000000;
+    animation: jump 2.5s infinite ease-in-out; /* Jump animation */
+    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Smooth zoom effect */
+}
+
+/* Image inside the circular profile */
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Hover effect: Zoom in */
+.profile-image:hover {
+    transform: scale(1.5); /* Zoom effect */
+    box-shadow: 0 0 20px rgba(106, 17, 203, 0.6); /* Glowing shadow */
+}
+
+/* Keyframes for jump animation */
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0); /* Starting and ending position */
+    }
+    50% {
+        transform: translateY(-10px); /* Moves the image up slightly */
+    }
+}
+
+/* Title text */
+.card h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin: 5px 0;
+}
+
+/* Description text */
+.card p {
+    font-size: 14px;
+    color: #555;
+    max-width: 350px;
+    word-wrap: break-word;
+    line-height: 1.4;
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+.social-container {
+    display: flex;
+    flex-direction: column; /* Stack rows vertically */
+    align-items: center; /* Center rows */
+    gap: 15px; /* Space between rows */
+    width: 100%; /* Ensure it spans the container width */
+    max-width: 400px; /* Optional: Add a max-width constraint */
+    margin: 0 auto; /* Center it within the parent */
+}
+
+
+/* Social rows */
+.social-row {
+    display: flex;
+    flex-direction: row; /* Ensure horizontal alignment */
+    flex-wrap: nowrap; /* Prevent icons from wrapping */
+    gap: 15px; /* Space between icons */
+    justify-content: center; /* Center the icons */
+    width: 100%; /* Ensure the row spans the container width */
+}
+
+
+
+
+/* Social Links (General Style) */
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Circular buttons */
+    background-color: #333; /* Default background */
+    color: #fff; /* Default icon color */
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Icons */
+.social-link i {
+    font-size: 20px; /* Icon size */
+}
+
+/* Hover Effect */
+.social-link:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Social-Specific Colors */
+.social-link.call:hover { background-color: #1560bd; } /* Call */
+.social-link.home:hover { background-color: #6a11cb; } /* Home */
+.social-link.facebook:hover { background-color: #3b5998; } /* Facebook */
+.social-link.messenger:hover { background-color: #0084ff; } /* Messenger */
+.social-link.whatsapp:hover { background-color: #25d366; } /* WhatsApp */
+.social-link.telegram:hover { background-color: #0088cc; } /* Telegram */
+.social-link.instagram:hover { background-color: #e1306c; } /* Instagram */
+.social-link.email:hover { background-color: #d44638; } /* Email */
+.social-link.twitter:hover { background-color: #1da1f2; } /* Twitter */
+.social-link.github:hover { background-color: #333; } /* GitHub */
+
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+    .card {
+        width: 90%; /* Make the card narrower */
+        max-width: 400px; /* Restrict the maximum width */
+        padding: 20px; /* Reduce padding */
+        margin: 40px auto; /* Add space around the card */
+    }
+
+    .social-row {
+        flex-direction: row; /* Ensure horizontal alignment */
+        justify-content: center; /* Center icons */
+        gap: 10px; /* Adjust spacing for smaller screens */
+    }
+}
