@@ -1,10 +1,15 @@
-# Asif Iqbal Social Links Page
+# Personal Website Social Links Landing Page
 
 A simple and responsive personal social links landing page built with HTML and CSS. This project presents a clean profile card with an animated background, profile image effects, and direct access to social and contact platforms.
+
 
 ## Motivation
 
 The goal of this project was to create a visually appealing personal landing page that gathers important social and contact links in one place. It provides a clean and interactive way to share personal identity, contact options, and online presence.
+
+## Demo
+
+You can view the live demo of the project [here](https://social-links-landing-page.vercel.app/).
 
 ## Features
 
@@ -31,31 +36,36 @@ The goal of this project was to create a visually appealing personal landing pag
 ├── styles.css
 ├── sqaure.gif
 └── sqaure.png
+```
 
+## How to Run
 
-How to Run
-Download or clone the repository
-Keep all files in the same folder
-Open index.html in your browser
-About the Design
+1. Download or clone the repository
+2. Keep all files in the same folder
+3. Open `index.html` in your browser
 
-This project uses a smooth animated gradient background and a white profile card to keep the design modern and eye catching. Social icons are grouped in two rows for better layout and easier access.
+## About the Design
 
-Future Improvements
-Add dark mode
-Add more profile details
-Add copy to clipboard for contact info
-Add smoother mobile optimization
-Add a downloadable vCard or resume button
+This project uses a smooth animated gradient background and a white profile card to keep the design modern and eye-catching. Social icons are grouped in two rows for better layout and easier access.
 
+## Future Improvements
+
+1. Add dark mode
+2. Add more profile details
+3. Add copy to clipboard for contact info
+4. Add smoother mobile optimization
+5. Add a downloadable vCard or resume button
 
 ## License
 
 This project is licensed under the MIT License.
 
-Acknowledgments
+## Acknowledgments
 
-This project was created as a personal web profile and social links page by aka assB0T.
+This project was created as a personal web profile and social links page.
+
+
+
 
 
 
