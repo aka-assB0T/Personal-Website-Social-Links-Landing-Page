@@ -2,6 +2,18 @@
 
 A simple and responsive personal social links landing page built with HTML and CSS. This project presents a clean profile card with an animated background, profile image effects, and direct access to social and contact platforms.
 
+## Table of Contents
+
+-   [Features](#features)
+-   [Technologies Used](#technologies-used)
+-   [Demo](#demo)
+-   [Project Structure](#project-structure)
+-   [Configuration](#configuration)
+-   [Contributing](#contributing)
+-   [Screenshots](#screenshots)
+-   [License](#license)
+-   [Acknowledgments](#acknowledgments)
+
 
 ## Motivation
 
@@ -13,7 +25,7 @@ You can view the live demo of the project [here](https://social-links-landing-pa
 
 ## Features
 
-1. Animated multi color gradient background
+1. Animated multi-colour gradient background
 2. Centered profile card layout
 3. Circular animated profile image
 4. Hover zoom effect on profile image
@@ -32,7 +44,7 @@ You can view the live demo of the project [here](https://social-links-landing-pa
 
 ```text
 .
-├── index.html
+├── index.html    
 ├── styles.css
 ├── sqaure.gif
 └── sqaure.png
@@ -57,12 +69,11 @@ This project uses a smooth animated gradient background and a white profile card
 5. Add a downloadable vCard or resume button
 
 ## License
-
-This project is licensed under the MIT License.
+This project is licensed under the MIT License - see the [LICENSE](./assets/LICENSE) file for details.
 
 ## Acknowledgments
 
-This project was created as a personal web profile and social links page.
+This project was created as a personal web profile and social links page by [aka-assB0T](https://github.com/aka-assB0T).
 
 
 
